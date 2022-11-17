@@ -26,7 +26,7 @@ table = db[:miasta]
     e[0] = e[0].delete(" \t\r\n")
     e[3] = e[3].delete(" \t\r\n")
     e.join(' ')
-  }.join("\n")
+  }.join("\n") + "\n"
 
 File.write("table.dat", table)
 
